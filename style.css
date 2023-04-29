@@ -1,0 +1,403 @@
+        body
+        {
+            padding: 0;
+            margin: 0;
+            /*
+
+            background: url("/images/new/CosmicShadowlands.png") no-repeat top center fixed;
+*/
+            background: url("/images/cosmic_bg.jpg") no-repeat top center fixed;
+            background-size: cover;
+            overflow: hidden;
+        }
+        html, body
+        {
+            height: 100%;
+            width: 100%;
+        }
+
+
+        a {
+            position: relative;
+            z-index: 5000;
+
+            display: inline-block;
+            font-size: 0;
+            height: 100%;
+
+        }
+
+        a,img {
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+
+        .planet-container {
+            font-size: 0;
+            position: absolute;
+            width: 100%;
+            display: block;
+        }
+
+        .planet-img {
+            height: 100%;
+        }
+
+        .planet-highlights {
+            height: 100%;
+            position: absolute;
+            mix-blend-mode: screen;
+            opacity: 0;
+            filter: brightness(1.2);
+        }
+
+        .planet-highlights:hover {
+            opacity: 1;
+
+        }
+
+/*
+        .planet-img:hover {
+            filter: drop-shadow(0 0 30px #fff8c5);
+        }
+
+        */
+
+
+
+
+        #shadowlands-containter {
+            top: 7.8%;
+            height: 38%;
+        }
+
+        #azeroth-containter {
+            height: 64.79%;
+            text-align: center;
+            top: 18.5%;
+        }
+
+        #azeroth-link {
+            margin-left: 5.1%;
+        }
+
+
+        #argus-containter {
+            height: 34.63%;
+            text-align: right;
+            top: 3.5%;
+        }
+
+
+        #argus-link {
+            margin-right: 6.3%;
+        }
+
+
+        #outland-containter {
+            bottom: 0%;
+            height: 53.67%;
+        }
+
+        #outland-link {
+            margin-left: 1%;
+        }
+
+
+
+
+        #draenor-containter {
+            height: 51.63%;
+            top: 34.03%;
+            text-align: right;
+        }
+
+
+
+        @media (min-aspect-ratio: 12/6) {
+
+            #argus-link {
+                margin-right: 15%;
+            }
+
+
+            #shadowlands-link {
+                margin-left: 5%;
+            }
+
+            #outland-link {
+                margin-left: 12%;
+            }
+        }
+
+        @media (min-aspect-ratio: 12/5) {
+
+            #draenor-link {
+                margin-right: 3%;
+            }
+
+            #argus-link {
+                margin-right: 19%;
+            }
+
+            #shadowlands-link {
+                margin-left: 10%;
+            }
+
+            #outland-link {
+                margin-left: 17%;
+            }
+        }
+
+
+        @media (min-aspect-ratio: 12/4) {
+            #draenor-containter {
+                top: calc(50% - 26vh); /*   50% - половина от height */
+            }
+            #argus-containter {
+                top: calc(50% - 17.31vh);
+            }
+            #shadowlands-containter {
+                top: calc(50% - 19vh);
+            }
+
+            #outland-containter {
+                top: calc(50% - 29.6vh);
+            }
+            #argus-link {
+                margin-right: 21%;
+            }
+            #shadowlands-link {
+                margin-left: 1%;
+            }
+
+            #outland-link {
+                margin-left: 19%;
+            }
+        }
+
+
+        @media (max-aspect-ratio: 149/100) {  /*  15/10  оригинальное разрешение   149/100 изза хрома  */
+
+            #azeroth-link {
+                margin-left: 2.1%;
+            }
+
+            #draenor-containter {
+                top: unset ;
+                bottom: 0px
+            }
+            #argus-containter {
+                top: 0;
+            }
+            #shadowlands-containter {
+                top: 0;
+            }
+            #outland-containter {
+                top: unset ;
+                bottom: 0px
+            }
+        }
+
+
+        @media (max-aspect-ratio: 14/10) {
+
+            #shadowlands-containter {
+                height: 30.4%;
+                top: 7.8%;
+            }
+            #argus-containter {
+                height: 27.7%;
+                top: 3.5%;
+            }
+            #azeroth-containter {
+                height: 51.83%;
+
+                top: calc(50% - 25.9vh);
+
+            }
+
+            #outland-containter {
+                height: 42.93%;
+                bottom: 0%;
+            }
+            #draenor-containter {
+                height: 41.3%;
+                top: 45.03%;
+            }
+
+
+        }
+
+
+        @media (max-aspect-ratio: 115/100) {
+
+            #outland-containter {
+                bottom: -3%;
+            }
+
+            #shadowlands-containter {
+                top: 1.5%;
+            }
+
+            #draenor-containter {
+                top: unset;
+                bottom: -3%;
+            }
+
+        }
+
+        @media (max-aspect-ratio: 77/100) {
+
+            /*
+            .planet-container {
+                display: none !important;
+            }
+*/
+
+            #argus-link {
+                margin-right: 1.3%;
+            }
+
+            #shadowlands-containter {
+                height: 22.8%;
+            }
+            #argus-containter {
+                height: 20.778%;
+                top: 11.5%;
+
+            }
+            #azeroth-containter {
+                height: 38.874%;
+                top: calc(50% - 19.437vh);
+
+            }
+            #outland-containter {
+                height: 32.202%;
+            }
+            #draenor-containter {
+                height: 30.978%;
+                bottom: 8%;
+
+            }
+
+        }
+
+
+        @media (max-aspect-ratio: 55/100) {
+
+
+            /*
+            .planet-container {
+                display: none !important;
+            }
+
+            */
+           #argus-link,#argus-link,#shadowlands-link {
+                margin: 0;
+            }
+            #azeroth-link {
+                margin-left: 3%;
+              }
+
+            #draenor-link {
+                margin-left: 5.1%;
+            }
+
+            #shadowlands-containter {
+                height: 19%;
+                text-align: center;
+            }
+            #argus-containter {
+                height: 17.315%;
+                top: 18.4%;
+                text-align: center;
+
+            }
+            #azeroth-containter {
+                height: 32.395%;
+                top: calc(50% - 18.198vh);
+
+            }
+            #outland-containter {
+                height: 26.8350%;
+                text-align: center;
+            }
+            #draenor-containter {
+                height: 25.8150%;
+                bottom: 16.5%;
+                text-align: center;
+            }
+
+
+
+        }
+
+
+        @media (max-aspect-ratio: 35/100) {
+
+
+            /*
+            .planet-container {
+                display: none !important;
+            }
+
+            */
+
+            #azeroth-link {
+                margin-left: 3%;
+            }
+
+            #draenor-link {
+                margin-left: 5.1%;
+            }
+
+            #shadowlands-containter {
+                height: 53.273vw;
+                text-align: center;
+            }
+            #argus-containter {
+                height: 48.548vw;
+                top: 18.4%;
+                text-align: center;
+
+            }
+            #azeroth-containter {
+                height: 90.834vw;
+                top: calc(50% - 18.198vh);
+
+            }
+            #outland-containter {
+                height: 75.241vw;
+                text-align: center;
+            }
+            #draenor-containter {
+                height: 72.388vw;
+                bottom: 16.5%;
+                text-align: center;
+            }
+
+        }
+
+        @media (max-aspect-ratio: 3/10) {
+
+
+
+            #azeroth-containter {
+                height: 90.834vw;
+                top: calc(50% - 37.620vw);
+
+            }
+
+            #outland-containter {
+                bottom:0;
+            }
+
+
+        }
+
+
+
